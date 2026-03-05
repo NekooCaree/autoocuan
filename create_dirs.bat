@@ -1,0 +1,4 @@
+@echo off
+cd /d "D:\VIOLAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA\AUTO CUAN"
+node create_dirs.js
+pause
