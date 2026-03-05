@@ -16,3 +16,6 @@ local.properties
 
 # File rahasia server — JANGAN pernah di-commit ke GitHub
 .env
+
+# Dependencies Node.js — di-generate ulang saat deploy
+node_modules/

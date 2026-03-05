@@ -1,0 +1,26 @@
+# .railwayignore — Daftar file/folder yang DIABAIKAN oleh Railway saat build
+#
+# Railway akan tetap men-clone seluruh repo dari GitHub,
+# tapi file-file di sini tidak akan diproses atau di-upload ke build context.
+
+# ─── Proyek Android (DIABAIKAN oleh Railway) ──────────────────────────────
+app/
+gradle/
+gradlew
+gradlew.bat
+build.gradle.kts
+settings.gradle.kts
+gradle.properties
+local.properties
+.gradle/
+build/
+.kotlin/
+.idea/
+*.iml
+create_directories.bat
+create_dirs.bat
+create_dirs.js
+create_dirs.py
+
+# ─── File rahasia — JANGAN pernah di-deploy ───────────────────────────────
+.env

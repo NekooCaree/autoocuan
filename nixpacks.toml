@@ -1,0 +1,16 @@
+# nixpacks.toml — Konfigurasi build untuk Railway
+#
+# File ini memaksa Railway/Nixpacks menggunakan Node.js provider
+# dan MENGABAIKAN file Gradle/Android (build.gradle.kts, gradlew, dll).
+#
+# Tanpa file ini, Railway salah deteksi proyek sebagai Android build
+# dan mencoba menjalankan `./gradlew clean build` yang pasti gagal.
+
+[phases.setup]
+nixPkgs = ["nodejs_20"]  # Gunakan Node.js 20 LTS
+
+[phases.install]
+cmds = ["npm install"]   # Install dependencies dari package.json
+
+[start]
+cmd = "node server.js"   # Perintah untuk menjalankan server
